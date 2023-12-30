@@ -298,6 +298,55 @@ type ContextType = Record<string, React.ForwardRefExoticComponent<JSX.IntrinsicE
 export function Model(props: JSX.IntrinsicElements['group']) {
   const { nodes, materials } = useGLTF('assets/house-water-transformed.glb') as GLTFResult
 
+  materials.ground_1.transparent = true
+  materials.ground_1.opacity = 0.2
+  materials.ground_1.depthWrite = false
+  materials.wall_1_2.transparent = true
+  materials.wall_1_2.opacity = 0.2
+  materials.wall_1_2.depthWrite = false
+  materials.room_58_344.transparent = true
+  materials.room_58_344.opacity = 0.2
+  materials.room_58_344.depthWrite = false
+  materials.grey.transparent = true
+  materials.grey.opacity = 0.2
+  materials.grey.depthWrite = false
+  materials.flltgrey.transparent = true
+  materials.flltgrey.opacity = 0.2
+  materials.flltgrey.depthWrite = false
+  materials.flltgrey_sweethome3d_window_pane_420.transparent = true
+  materials.flltgrey_sweethome3d_window_pane_420.opacity = 0.2
+  materials.flltgrey_sweethome3d_window_pane_420.depthWrite = false
+  materials['default'].depthWrite = true
+  materials['default'].opacity = 0.2
+  materials['default'].depthWrite = false
+  materials.Glass.transparent = true
+  materials.Glass.opacity = 0.2
+  materials.Glass.depthWrite = false
+  materials.flltgrey_sweethome3d_window_pane_420.transparent = true
+  materials.flltgrey_sweethome3d_window_pane_420.opacity = 0.2
+  materials.flltgrey_sweethome3d_window_pane_420.depthWrite = false
+  materials.white_Fenetre_480.transparent = true
+  materials.white_Fenetre_480.opacity = 0.2
+  materials.white_Fenetre_480.depthWrite = false
+  materials.white_13_526.transparent = true
+  materials.white_13_526.opacity = 0.2
+  materials.white_13_526.depthWrite = false
+  materials.wall_1_2.transparent = true
+  materials.wall_1_2.opacity = 0.2
+  materials.wall_1_2.depthWrite = false
+  materials.glassblutint.transparent = true
+  materials.glassblutint.opacity = 0.2
+  materials.glassblutint.depthWrite = false
+  materials.Aluminium_652.transparent = true
+  materials.Aluminium_652.opacity = 0.2
+  materials.Aluminium_652.depthWrite = false
+  materials.GLASS.transparent = true
+  materials.GLASS.opacity = 0.2
+  materials.GLASS.depthWrite = false
+  materials.Glass_sweethome3d_window_mirror_985.transparent = true
+  materials.Glass_sweethome3d_window_mirror_985.opacity = 0.2
+  materials.Glass_sweethome3d_window_mirror_985.depthWrite = false
+
   return (
     <group {...props} dispose={null}>
       <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
