@@ -17,9 +17,9 @@ javascript → typescriptに変更するのにハマったこと。
 - 型違いで、怒られた!! 解決方法は[ココ](https://qiita.com/aaaa1597/items/497e2a5007c64bdfa804#20type-mutablerefobject-is-not-assignable-to-type-ref--undefined-type-mutablerefobject-is-not-assignable-to-type-refobjectthe-types-of-currentobject-are-incompatible-between-these-types-type-perspectivecamera--orthographiccamera--undefined-is-not-assignable-to-type-perspectivecamera--orthographiccamera-type-undefined-is-not-assignable-to-type-perspectivecamera--orthographiccamerats2322-indexdts119-9-the-expected-type-comes-from-property-ref-which-is-declared-here-on-type-intrinsicattributes--orbitcontrolsprops--refattributes)
 
 - propsを受け取る関数コンポーネントが分からんかった。
-ポイント1. 関数コンポーネントに引数を追加するときは、Propsの型定義をする。
-ポイント2. 関数コンポーネントを渡すときは、バラした状態になる。
-ポイント3. useRefの型は、React.MutableRefObject<なんちゃら>。
+  - ポイント1. 関数コンポーネントに引数を追加するときは、Propsの型定義をする。
+  - ポイント2. 関数コンポーネントを渡すときは、バラした状態になる。
+  - ポイント3. useRefの型は、React.MutableRefObject<なんちゃら>。
 
 ```ts:App.tsx
 import { OrbitControls as OrbitControlsImpl } from "three-stdlib"
