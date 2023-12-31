@@ -1,6 +1,6 @@
 import React, { Suspense, useState, useRef } from 'react';
 import { Canvas, useFrame, useThree } from '@react-three/fiber'
-import { OrbitControls, OrbitControlsProps, Environment, useProgress, Html, Stats } from '@react-three/drei'
+import { OrbitControls, Environment, useProgress, Html, Stats } from '@react-three/drei'
 import { OrbitControls as OrbitControlsImpl } from "three-stdlib"
 import './App.css';
 import { Model } from './House'
